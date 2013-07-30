@@ -1,5 +1,5 @@
 var GACookieParser = function(cookies) {
-  if (typeof(cookies) == undefined) {
+  if (cookies === undefined) {
     cookies = document.cookies;
   }
   this.cookies = this.parseCookies(cookies);
