@@ -51,7 +51,7 @@ GACookieParser.prototype.values = {
 
 GACookieParser.prototype.get = function(key) {
   if (this.values.hasOwnProperty(key)) {
-    return this.data[key];
+    return decodeURIComponent(this.data[key]);
   } else {
     return null;
   }
